@@ -1,0 +1,70 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+html,body{
+	text-align: center;
+  background-color: #9B3F13;
+  font-family: montserrat;
+}
+
+/* div{
+ border: solid 1px;
+} */
+
+.Espacio{
+  padding-top: 15%;
+}
+
+.ContenedorLista{
+  background-color: white;
+  width: 40%;
+  border-radius: 4px;
+}
+
+.ContenedorFecha{
+  text-align: left;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  color: #D99B9E;
+}
+
+input::placeholder{
+  color: gray;
+  font-size: 3vh;
+}
+
+.Tareas{
+  border: solid 1px;
+  border-color: #DDDDDD;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 4px;
+  width: 75%;
+  font-size: 3vh;
+}
+
+.Btn{
+  color: white;
+  border: none;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  border-radius: 4px;
+  font-size: 3vh;
+}
+
+.ContenedorMensajeVacio img{
+  width: 10%;
+}
+
+.ContenedorMensajeVacio{
+  padding-bottom: 50%;
+}
