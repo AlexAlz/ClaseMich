@@ -21,6 +21,11 @@ html,body{
   padding-top: 15%;
 }
 
+.ContenedorTodo{
+	width: auto;
+	margin: 0 auto;
+}
+
 .ContenedorLista{
   background-color: white;
   width: 40%;
@@ -34,6 +39,13 @@ html,body{
   padding-bottom: 5%;
   color: #D99B9E;
 }
+
+.wrap {
+	margin: auto;
+	max-width: 800px;
+	width: 90%;
+}
+
 
 input::placeholder{
   color: gray;
@@ -50,7 +62,27 @@ input::placeholder{
   font-size: 3vh;
 }
 
-.Btn{
+.AgregarTareaN{
+	border: solid 1px;
+  border-color: blue;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 4px;
+  width: 75%;
+  font-size: 3vh;
+}
+
+.error{
+	border: solid 4px;
+  border-color: red;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 4px;
+  width: 75%;
+  font-size: 3vh;
+}
+
+.boton{
   color: white;
   border: none;
   padding-top: 2.5%;
@@ -61,10 +93,40 @@ input::placeholder{
   font-size: 3vh;
 }
 
+.boton:hover{
+	background-color: red;
+}
+
+.tareas .lista {
+	list-style: none;
+}
+
+.tareas .lista li {
+	border-bottom: 1px solid #B6B6B6;
+	background-color: #DDDDDD;
+	border-radius: 10px;
+}
+
+
+.tareas .lista li a {
+	color: #212121;
+	display: block;
+	padding: 15px 0;
+	text-decoration: none;
+}
+
+.tareas .lista li a:hover {
+	text-decoration: line-through;
+}
+
 .ContenedorMensajeVacio img{
   width: 10%;
 }
 
 .ContenedorMensajeVacio{
   padding-bottom: 50%;
+}
+
+.Borrar{
+	display: none;
 }
