@@ -9,7 +9,7 @@
 
 html,body{
 	text-align: center;
-  background-color: #9B3F13;
+	background-image: url(../images/fondo.jpg);
   font-family: montserrat;
 }
 
@@ -18,7 +18,7 @@ html,body{
 } */
 
 .Espacio{
-  padding-top: 15%;
+  padding-top: 10%;
 }
 
 .ContenedorTodo{
@@ -29,15 +29,17 @@ html,body{
 .ContenedorLista{
   background-color: white;
   width: 40%;
-  border-radius: 4px;
+	margin: 0 auto;
+  border-radius: 7px;
 }
 
 .ContenedorFecha{
   text-align: left;
   padding-top: 10%;
-  padding-left: 5%;
+  padding-left: 10%;
   padding-bottom: 5%;
   color: #D99B9E;
+	font-size: 3vh;
 }
 
 .wrap {
@@ -64,7 +66,7 @@ input::placeholder{
 
 .AgregarTareaN{
 	border: solid 1px;
-  border-color: blue;
+  border-color:  #DDDDDD;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   border-radius: 4px;
@@ -99,6 +101,7 @@ input::placeholder{
 
 .tareas .lista {
 	list-style: none;
+	padding-bottom: 20%;
 }
 
 .tareas .lista li {
@@ -124,9 +127,24 @@ input::placeholder{
 }
 
 .ContenedorMensajeVacio{
-  padding-bottom: 50%;
+  padding-bottom: 30%;
 }
 
 .Borrar{
 	display: none;
+}
+
+.EliminarTodo{
+	padding: 2%;
+	border: none;
+	background-color: #ffff;
+	border-radius: 5px;
+	font-size: 3vh;
+	display: none;
+	width: 30%;
+    margin: 0 auto;
+}
+
+.EliminarTodo:hover{
+	background-color: red;
 }

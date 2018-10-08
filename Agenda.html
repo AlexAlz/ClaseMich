@@ -7,26 +7,33 @@
     <title>Proyecto de Mich</title>
   </head>
   <body>
-    <!-- Sé que me advertiste que no usara center para centrar las cosas jajaja, pero te prometo que solo es temporal -->
-      <center>
+    <!-- No pude poner el drag and drop -->
+
         <div class="Espacio">
 
         </div>
         <div class="ContenedorLista">
-          <div class="ContenedorFecha">
-            <p class="DiaTemporal">Lunes</p>
-            <p class="FechaTemporal">03 de Septiembre del 2018</p>
+          <div class="ContenedorFecha" id="fecha">
+            <script>
+            var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+            var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+            var f=new Date();
+            document.write(diasSemana[f.getDay()] + "<br>" + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+            </script>
           </div>
           <div class="ContenedorTarea">
             <div class="wrap">
         		  <form class="formulario" action="">
                 <input type="text" name="" id="tareaInput" class="Tareas" placeholder="Ingrese su(s) pendiente(s)" required>
-                <button type="button" name="button" class="boton" id="btn-agregar"><span class="icon-plus"></span></button>
+                <button type="button" name="button" class="boton" id="btn-agregar" onclick="ocultarIamgen()"><span class="icon-plus"></span></button>
         			</form>
         		</div>
           </div>
           <div class="Espacio">
 
+          </div>
+          <div class="ContenedorNtareas">
+            <p id="numerotareas"></p>
           </div>
           <div class="tareas">
         		<div class="wrap">
@@ -35,17 +42,22 @@
         			</ul>
         		</div>
         	</div>
-          <div class="ContenedorMensajeVacio" id="Borrar">
+          <div class="ContenedorMensajeVacio" id="borrar">
             <center>
               <img src="assets/images/cerveza.png" alt="">
               <p>Tiempo de relajarse! No hay cosas por hacer.</p>
             </center>
           </div>
-        </div>
-        <div class="Espacio">
+            <button type="button" name="button" class="EliminarTodo" id="deleteall">Eliminar todas</button>
+            <div class="Espacio">
 
+            </div>
         </div>
-    </center>
+        <!-- <div class="Espacio">
+
+        </div> -->
+
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/fecha.js"></script>
   </body>
 </html>
